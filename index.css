@@ -1,0 +1,46 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    /* border: 1px solid #000; */
+    background-color: black;
+}
+
+.hea{
+  background-color: aliceblue;
+  color: white;
+}
+
+.container { 
+    padding:  10% 38%;
+}  
+  
+.button{
+    width: 66px;
+    padding: 20px;
+    margin: 0 3px;
+    border: 2px solid rgb(230, 205, 205);
+    border-radius: 9px;
+    cursor: pointer;
+    /* box-shadow: 5px 10px #888888; */
+    border-radius: 50px;
+    color: white;
+
+  }
+  
+  .row{
+    margin: 8px 0;
+  }
+  .row input{
+    width: 291px;
+    font-size: 20px;
+      padding: 10px 0px;
+      border: 2px solid rgb(232, 221, 221);
+      border-radius: 5px;
+      color: white;
+      
+  }
+ 
+  #col{
+    background-color: orange;
+    border: none;
+  }

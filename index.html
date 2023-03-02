@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./index.css">
+    <title>Calculater</title>
+</head>
+<body>
+   <h1 class="hea">Welcome To My Calculater </h1>
+  <div class="container gap-y-1 ">
+    <div class="row">
+      <input class="input " type="text"/>
+    </div>
+    <div class="row flex gap-4">
+      <button class="button" id="col">C</button>
+      <button class="button"id="col">dell</button>
+      <button class="button"id="col">%</button>
+      <button class="button"id="col">M</button>
+    </div>
+    <div class="row flex gap-5">
+      <button class="button">7</button>
+      <button class="button">8</button>
+      <button class="button">9</button>
+      <button class="button"id="col">*</button>
+    </div>
+    <div class="row flex gap-5">
+      <button class="button">4</button>
+      <button class="button">5</button>
+      <button class="button">6</button>
+      <button class="button"id="col">/</button>
+    </div>
+    <div class="row flex gap-5">
+      <button class="button">1</button>
+      <button class="button">2</button>
+      <button class="button">3</button>
+      <button class="button"id="col">+</button>
+    </div>
+    <div class="row flex gap-5">
+      <button class="button">0</button>
+      <button class="button">.</button>
+      <button class="button">=</button>
+      <button class="button"id="col">-</button>
+    </div>
+  </div>
+
+
+
+
+<script>
+    var inp=document.getElementsByTagName('input')[0]
+    var btns= document.querySelectorAll('button');
+    console.log('btns');
+btns.forEach((ele)=>{
+  ele.addEventListener('click', (e)=>{
+    if(e.target.innerText == '='){
+      var z=eval(inp.value)
+      console.log(z);
+      inp.value=z;
+    }
+    else if(e.target.innerText=='dell'){
+      inp.value = inp.value.substr(0,inp.value.length-1);
+    }
+    else if(e.target.innerText =='C'){
+      inp.value=""
+    
+       
+    }
+
+    else if(e.target.innerText!='C'){ 
+    inp.value+=e.target.innerText
+    
+      }
+  })
+})
+</script>
+
+
+
+
+
+
+
+
+
+</body>
+</html>
